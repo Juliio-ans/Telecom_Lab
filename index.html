@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página educativa sobre tipos de canales o medios de transmisión en telecomunicaciones.">
+    <title>Canales de comunicación | Telecomunicaciones</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="wrap nav-wrap">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio">
+                <span class="brand-mark">↔</span>
+                <span>Telecom<span class="accent">Lab</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+            <nav id="mainNav" class="main-nav" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#conceptos">Conceptos</a>
+                <a href="#simulador">Simulador</a>
+                <a href="#guiados">Guiados</a>
+                <a href="#no-guiados">No guiados</a>
+                <a href="#comparativa">Comparativa</a>
+                <a href="#multimedia">Multimedia</a>
+                <a href="#reflexion">Reflexión</a>
+                <a href="#fuentes">Fuentes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero section">
+            <div class="wrap hero-grid">
+                <div>
+                    <span class="eyebrow">TELECOMUNICACIONES · MEDIOS DE TRANSMISIÓN</span>
+                    <h1>Canales de comunicación: <span>cómo viaja la información</span></h1>
+                    <p class="hero-text">
+                        Un canal o medio de transmisión es el camino por el que una señal lleva información
+                        desde un emisor hasta un receptor. En telecomunicaciones se estudia principalmente
+                        mediante medios <strong>guiados</strong> y <strong>no guiados</strong>.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#conceptos">Explorar el tema →</a>
+                        <button class="btn btn-ghost" id="speakIntro">🔊 Escuchar explicación</button>
+                    </div>
+
+                    <div class="hero-mini-grid">
+                        <div class="mini-card">
+                            <strong>02</strong>
+                            <span>grandes familias</span>
+                        </div>
+                        <div class="mini-card">
+                            <strong>07</strong>
+                            <span>medios principales</span>
+                        </div>
+                        <div class="mini-card">
+                            <strong>01</strong>
+                            <span>objetivo: comunicar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signal-visual" aria-label="Diagrama de emisor, canal y receptor">
+                    <div class="device">
+                        <div class="device-icon">◉</div>
+                        <small>EMISOR</small>
+                        <b>Datos</b>
+                    </div>
+                    <div class="signal-lines">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="channel-pill">CANAL</div>
+                    <div class="signal-lines reverse">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="device">
+                        <div class="device-icon">◎</div>
+                        <small>RECEPTOR</small>
+                        <b>Información</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conceptos" class="section light">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">01 · CONCEPTOS BÁSICOS</span>
+                    <h2>Primero, una idea clave</h2>
+                    <p>
+                        No hablamos de medios masivos de comunicación. Aquí estudiamos el <strong>medio físico
+                        o inalámbrico</strong> que permite transportar una señal en un sistema de telecomunicaciones.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-step"><span>1</span><b>Fuente</b><small>genera la información</small></div>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step"><span>2</span><b>Transmisor</b><small>prepara la señal</small></div>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step highlight"><span>3</span><b>Canal</b><small>transporta la señal</small></div>
+                    <div class="process-arrow">→</div>
+                    <div class="process-step"><span>4</span><b>Receptor</b><small>recupera la información</small></div>
+                </div>
+
+                <div class="split-intro">
+                    <article class="classification-card guided">
+                        <div class="card-top"><span class="icon-box">↣</span><span class="tag">ALÁMBRICOS</span></div>
+                        <h3>Medios guiados</h3>
+                        <p>La señal se conduce por un soporte físico, normalmente un cable.</p>
+                        <a href="#guiados" class="text-link">Ver medios guiados →</a>
+                    </article>
+
+                    <article class="classification-card wireless">
+                        <div class="card-top"><span class="icon-box">⌁</span><span class="tag">INALÁMBRICOS</span></div>
+                        <h3>Medios no guiados</h3>
+                        <p>La información se propaga por el espacio mediante ondas electromagnéticas.</p>
+                        <a href="#no-guiados" class="text-link">Ver medios no guiados →</a>
+                    </article>
+                </div>
+
+                <div class="note">
+                    <strong>Dato importante:</strong> el desempeño de un canal depende del tipo de señal, la velocidad,
+                    la distancia, la interferencia, el entorno y el equipamiento utilizado. Por eso no existe un medio
+                    universal para todas las aplicaciones.
+                </div>
+            </div>
+        </section>
+
+
+        <section id="simulador" class="section simulator-section">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">02 · SIMULADOR INTERACTIVO</span>
+                    <h2>Observa cómo viaja una señal</h2>
+                    <p>
+                        Selecciona un medio de transmisión y observa una representación animada del recorrido de los bits
+                        desde el transmisor hasta el receptor. Puedes cambiar los datos, la velocidad y la interferencia.
+                    </p>
+                </div>
+
+                <div class="simulator-shell">
+                    <aside class="sim-controls">
+                        <div class="control-block">
+                            <label for="mediumSelect">Medio de transmisión</label>
+                            <select id="mediumSelect">
+                                <option value="twisted">Par trenzado</option>
+                                <option value="coax">Cable coaxial</option>
+                                <option value="fiber">Fibra óptica</option>
+                                <option value="radio">Ondas de radio</option>
+                                <option value="microwave">Microondas</option>
+                                <option value="satellite">Satélite</option>
+                                <option value="infrared">Infrarrojo</option>
+                            </select>
+                        </div>
+
+                        <div class="control-block">
+                            <label for="dataInput">Datos binarios</label>
+                            <input id="dataInput" type="text" value="10110010" maxlength="16" inputmode="numeric" aria-describedby="dataHelp">
+                            <small id="dataHelp">Usa solo 0 y 1. Máximo 16 bits.</small>
+                        </div>
+
+                        <div class="control-block">
+                            <label for="speedRange">Velocidad de la animación <output id="speedValue">1.0×</output></label>
+                            <input id="speedRange" type="range" min="0.5" max="2.5" step="0.1" value="1">
+                        </div>
+
+                        <div class="control-block">
+                            <label for="noiseRange">Interferencia <output id="noiseValue">10%</output></label>
+                            <input id="noiseRange" type="range" min="0" max="40" step="1" value="10">
+                        </div>
+
+                        <div class="sim-buttons">
+                            <button class="btn btn-primary" id="startSim">▶ Iniciar</button>
+                            <button class="btn btn-ghost" id="pauseSim">Ⅱ Pausar</button>
+                            <button class="btn btn-ghost" id="resetSim">↺ Reiniciar</button>
+                        </div>
+
+                        <div class="sim-status">
+                            <div><span>Estado</span><strong id="simState">Listo</strong></div>
+                            <div><span>Bit actual</span><strong id="currentBit">—</strong></div>
+                            <div><span>Posición</span><strong id="bitPosition">0 / 8</strong></div>
+                        </div>
+                    </aside>
+
+                    <div class="sim-stage-wrap">
+                        <div class="sim-stage-head">
+                            <div>
+                                <span class="tag" id="simTypeTag">MEDIO GUIADO</span>
+                                <h3 id="simTitle">Par trenzado</h3>
+                                <p id="simDescription">La señal eléctrica se representa desplazándose por dos conductores trenzados.</p>
+                            </div>
+                            <div class="signal-legend">
+                                <span><i class="legend-dot data-dot"></i> Datos</span>
+                                <span><i class="legend-dot noise-dot"></i> Ruido</span>
+                            </div>
+                        </div>
+
+                        <div class="sim-canvas-card">
+                            <canvas id="transmissionCanvas" width="1100" height="470" aria-label="Simulador animado de transmisión de datos"></canvas>
+                            <div class="canvas-overlay left">TRANSMISOR</div>
+                            <div class="canvas-overlay right">RECEPTOR</div>
+                        </div>
+
+                        <div class="sim-readout">
+                            <div class="readout-card"><span>Señal</span><strong id="signalType">Eléctrica</strong></div>
+                            <div class="readout-card"><span>Trayecto</span><strong id="signalPath">Soporte físico</strong></div>
+                            <div class="readout-card"><span>Uso ejemplo</span><strong id="signalUse">Redes LAN</strong></div>
+                            <div class="readout-card"><span>Comentario</span><strong id="signalComment">La interferencia se representa visualmente.</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simulation-note">
+                    <strong>Importante:</strong> esta animación es una <em>representación didáctica</em> y no busca reproducir a escala
+                    las velocidades ni las características físicas reales de cada medio. Su propósito es visualizar la idea de
+                    transmisión de una señal y el efecto conceptual del ruido.
+                </div>
+            </div>
+        </section>
+
+        <section id="guiados" class="section">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">03 · MEDIOS GUIADOS</span>
+                    <h2>La señal viaja por un soporte físico</h2>
+                    <p>Los tres medios clásicos son par trenzado, cable coaxial y fibra óptica.</p>
+                </div>
+
+                <div class="medium-grid">
+                    <article class="medium-card">
+                        <div class="illustration copper">
+                            <svg viewBox="0 0 400 180" role="img" aria-label="Ilustración de par trenzado">
+                                <path d="M20 95 C70 25,120 165,170 95 S270 25,320 95 S370 165,390 95" fill="none" stroke="currentColor" stroke-width="8"/>
+                                <path d="M20 115 C70 45,120 185,170 115 S270 45,320 115 S370 185,390 115" fill="none" stroke="currentColor" stroke-width="8" opacity=".48"/>
+                                <circle cx="40" cy="105" r="12" fill="currentColor"/>
+                                <circle cx="360" cy="105" r="12" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">UTP / STP</span>
+                            <h3>Par trenzado</h3>
+                            <p>Dos conductores de cobre se trenzan para transportar señales eléctricas y reducir parte de la interferencia.</p>
+                            <div class="specs">
+                                <span>⚡ Señal eléctrica</span>
+                                <span>🏢 Redes LAN</span>
+                                <span>🔌 RJ-45 en Ethernet</span>
+                            </div>
+                            <div class="pros-cons">
+                                <div><b>Ventajas</b><p>Económico, fácil de instalar y muy común.</p></div>
+                                <div><b>Consideración</b><p>Su alcance y desempeño dependen de la categoría, instalación y entorno.</p></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="medium-card">
+                        <div class="illustration coax">
+                            <svg viewBox="0 0 400 180" role="img" aria-label="Ilustración de cable coaxial">
+                                <circle cx="200" cy="90" r="68" fill="none" stroke="currentColor" stroke-width="22"/>
+                                <circle cx="200" cy="90" r="42" fill="none" stroke="currentColor" stroke-width="10" opacity=".4"/>
+                                <circle cx="200" cy="90" r="18" fill="currentColor"/>
+                                <path d="M75 35 L325 145 M75 145 L325 35" stroke="currentColor" stroke-width="5" opacity=".2"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">COAXIAL</span>
+                            <h3>Cable coaxial</h3>
+                            <p>Integra un conductor central, aislamiento y una pantalla conductora que ayuda a proteger la señal.</p>
+                            <div class="specs">
+                                <span>⚡ Señal eléctrica</span>
+                                <span>📺 HFC / TV</span>
+                                <span>🎥 CCTV</span>
+                            </div>
+                            <div class="pros-cons">
+                                <div><b>Ventajas</b><p>Buen comportamiento frente a interferencias y capacidad adecuada para muchas aplicaciones.</p></div>
+                                <div><b>Consideración</b><p>Es más voluminoso que otras alternativas y su instalación depende del sistema.</p></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="medium-card featured">
+                        <div class="illustration fiber">
+                            <svg viewBox="0 0 400 180" role="img" aria-label="Ilustración de fibra óptica">
+                                <path d="M20 90 H380" stroke="currentColor" stroke-width="24" stroke-linecap="round" opacity=".18"/>
+                                <path d="M28 90 C85 50,135 130,195 90 S305 50,372 90" fill="none" stroke="currentColor" stroke-width="7"/>
+                                <path d="M28 90 C85 65,135 115,195 90 S305 65,372 90" fill="none" stroke="currentColor" stroke-width="3" opacity=".5"/>
+                                <circle cx="30" cy="90" r="13" fill="currentColor"/>
+                                <circle cx="370" cy="90" r="13" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">ÓPTICO</span>
+                            <h3>Fibra óptica</h3>
+                            <p>Utiliza pulsos de luz dentro de fibras de vidrio o material óptico. Permite altas tasas de transmisión y largas distancias.</p>
+                            <div class="specs">
+                                <span>💡 Luz</span>
+                                <span>🌐 Backbone / FTTH</span>
+                                <span>🛡️ Baja sensibilidad a EMI</span>
+                            </div>
+                            <div class="pros-cons">
+                                <div><b>Ventajas</b><p>Gran capacidad, largas distancias y menor sensibilidad a interferencias electromagnéticas.</p></div>
+                                <div><b>Consideración</b><p>Requiere componentes y técnicas de instalación específicas.</p></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="tiny-source">
+                    Referencias técnicas consultadas: Cisco Systems y IBM sobre medios físicos y fibra óptica.
+                </div>
+            </div>
+        </section>
+
+        <section id="no-guiados" class="section dark">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">04 · MEDIOS NO GUIADOS</span>
+                    <h2>La señal se propaga por el espacio</h2>
+                    <p>
+                        No existe un conductor que lleve físicamente la señal entre los extremos. Las antenas
+                        transmiten y reciben ondas electromagnéticas.
+                    </p>
+                </div>
+
+                <div class="medium-grid wireless-grid">
+                    <article class="medium-card dark-card">
+                        <div class="illustration radio">
+                            <svg viewBox="0 0 400 180" role="img" aria-label="Ilustración de ondas de radio">
+                                <path d="M55 90 Q200 5 345 90" fill="none" stroke="currentColor" stroke-width="8"/>
+                                <path d="M90 90 Q200 35 310 90" fill="none" stroke="currentColor" stroke-width="8" opacity=".7"/>
+                                <path d="M125 90 Q200 60 275 90" fill="none" stroke="currentColor" stroke-width="8" opacity=".4"/>
+                                <line x1="200" y1="145" x2="200" y2="85" stroke="currentColor" stroke-width="8"/>
+                                <circle cx="200" cy="85" r="10" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">RADIOFRECUENCIA</span>
+                            <h3>Ondas de radio</h3>
+                            <p>Permiten enlaces inalámbricos y redes como Wi‑Fi, Bluetooth, IoT y comunicaciones móviles.</p>
+                            <div class="specs"><span>📡 Antenas</span><span>📶 RF</span><span>🚶 Movilidad</span></div>
+                        </div>
+                    </article>
+
+                    <article class="medium-card dark-card">
+                        <div class="illustration microwave">
+                            <svg viewBox="0 0 400 180" role="img" aria-label="Ilustración de enlace de microondas">
+                                <line x1="60" y1="145" x2="60" y2="70" stroke="currentColor" stroke-width="8"/>
+                                <line x1="340" y1="145" x2="340" y2="70" stroke="currentColor" stroke-width="8"/>
+                                <path d="M60 75 Q200 0 340 75" fill="none" stroke="currentColor" stroke-width="6"/>
+                                <path d="M60 88 Q200 25 340 88" fill="none" stroke="currentColor" stroke-width="4" opacity=".5"/>
+                                <path d="M60 65 L95 55 L95 85 Z" fill="currentColor"/>
+                                <path d="M340 65 L305 55 L305 85 Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">MICROONDAS</span>
+                            <h3>Microondas terrestres</h3>
+                            <p>Enlaces punto a punto que usan haces direccionales y normalmente requieren una ruta adecuada entre antenas.</p>
+                            <div class="specs"><span>🎯 Direccional</span><span>📡 Punto a punto</span><span>🌄 Backhaul</span></div>
+                        </div>
+                    </article>
+
+                    <article class="medium-card dark-card">
+                        <div class="illustration satellite">
+                            <svg viewBox="0 0 400 180" role="img" aria-label="Ilustración de satélite de telecomunicaciones">
+                                <rect x="170" y="55" width="60" height="48" rx="8" fill="currentColor"/>
+                                <rect x="105" y="65" width="50" height="28" rx="4" fill="currentColor" opacity=".55"/>
+                                <rect x="245" y="65" width="50" height="28" rx="4" fill="currentColor" opacity=".55"/>
+                                <circle cx="200" cy="78" r="12" fill="none" stroke="currentColor" stroke-width="4"/>
+                                <path d="M70 135 Q200 30 330 135" fill="none" stroke="currentColor" stroke-width="4" opacity=".55"/>
+                                <path d="M105 135 Q200 65 295 135" fill="none" stroke="currentColor" stroke-width="4" opacity=".3"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">SATELITAL</span>
+                            <h3>Satélite</h3>
+                            <p>Utiliza enlaces de radio entre estaciones terrestres y satélites para cubrir grandes áreas.</p>
+                            <div class="specs"><span>🛰️ Gran cobertura</span><span>🌎 Larga distancia</span><span>⏱️ Latencia variable</span></div>
+                        </div>
+                    </article>
+
+                    <article class="medium-card dark-card">
+                        <div class="illustration infrared">
+                            <svg viewBox="0 0 400 180" role="img" aria-label="Ilustración de comunicación infrarroja">
+                                <rect x="145" y="55" width="110" height="65" rx="14" fill="none" stroke="currentColor" stroke-width="7"/>
+                                <circle cx="200" cy="88" r="12" fill="currentColor"/>
+                                <path d="M95 52 Q55 88 95 124 M70 38 Q20 88 70 138" fill="none" stroke="currentColor" stroke-width="5"/>
+                                <path d="M305 52 Q345 88 305 124 M330 38 Q380 88 330 138" fill="none" stroke="currentColor" stroke-width="5"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <span class="tag">LUZ</span>
+                            <h3>Infrarrojo</h3>
+                            <p>Emplea radiación infrarroja para enlaces de corto alcance; suele requerir condiciones de propagación favorables.</p>
+                            <div class="specs"><span>🔴 Luz IR</span><span>📍 Corto alcance</span><span>🎛️ Controles / sensores</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparativa" class="section light">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">05 · COMPARATIVA</span>
+                    <h2>¿Qué se debe analizar antes de elegir un canal?</h2>
+                    <p>La elección depende de las necesidades del sistema, no solamente de la velocidad.</p>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Medio</th>
+                                <th>Señal / soporte</th>
+                                <th>Usos frecuentes</th>
+                                <th>Punto fuerte</th>
+                                <th>Aspecto a considerar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Par trenzado</strong></td>
+                                <td>Eléctrica / cobre</td>
+                                <td>Ethernet, telefonía</td>
+                                <td>Costo e instalación</td>
+                                <td>Distancia e interferencia según categoría</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Coaxial</strong></td>
+                                <td>Eléctrica / cobre</td>
+                                <td>HFC, TV, CCTV</td>
+                                <td>Pantalla y capacidad</td>
+                                <td>Tipo de sistema y cableado</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fibra óptica</strong></td>
+                                <td>Luz / fibra</td>
+                                <td>Backbone, FTTH, centros de datos</td>
+                                <td>Capacidad y distancia</td>
+                                <td>Instalación y componentes ópticos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Radio</strong></td>
+                                <td>Ondas EM / aire</td>
+                                <td>Wi‑Fi, Bluetooth, móvil, IoT</td>
+                                <td>Movilidad</td>
+                                <td>Espectro, interferencias y cobertura</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Microondas</strong></td>
+                                <td>Ondas EM / aire</td>
+                                <td>Enlaces punto a punto</td>
+                                <td>Enlaces sin cable físico</td>
+                                <td>Ruta y alineación de antenas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Satélite</strong></td>
+                                <td>Ondas EM / espacio</td>
+                                <td>Cobertura amplia, zonas remotas</td>
+                                <td>Alcance geográfico</td>
+                                <td>Latencia y condiciones del enlace</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Infrarrojo</strong></td>
+                                <td>Luz IR / aire</td>
+                                <td>Controles, sensores, enlaces cortos</td>
+                                <td>Simplicidad para corto alcance</td>
+                                <td>Alcance y obstáculos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="criteria-grid">
+                    <div class="criterion"><span>01</span><b>Capacidad</b><small>¿Cuántos datos y a qué tasa?</small></div>
+                    <div class="criterion"><span>02</span><b>Distancia</b><small>¿Qué separación existe?</small></div>
+                    <div class="criterion"><span>03</span><b>Interferencia</b><small>¿Hay ruido o EMI?</small></div>
+                    <div class="criterion"><span>04</span><b>Costo</b><small>¿Cuánto cuesta instalar y mantener?</small></div>
+                    <div class="criterion"><span>05</span><b>Movilidad</b><small>¿Los equipos deben moverse?</small></div>
+                    <div class="criterion"><span>06</span><b>Entorno</b><small>¿Hay edificios, humedad o exposición exterior?</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="multimedia" class="section">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">06 · MULTIMEDIA</span>
+                    <h2>Aprender también es observar el medio</h2>
+                    <p>Este recurso audiovisual resume la clasificación de medios de transmisión.</p>
+                </div>
+
+                <div class="media-layout">
+                    <div class="video-card">
+                        <div class="video-ratio video-fallback">
+                            <div class="video-placeholder">
+                                <div class="play-circle">▶</div>
+                                <h3>Video educativo sobre medios de transmisión</h3>
+                                
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WoOi3narDKI?si=TchfHgjwIwfI9usP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                
+                            </div>
+                        </div>
+                        <div class="video-caption">
+                            <strong>Video educativo:</strong> clasificación de medios de transmisión guiados y no guiados.
+                            <span>Fuente: YouTube, TU CANAL EDUCATIVO BY AOLIVERO.</span>
+                        </div>
+                    </div>
+
+                    <div class="audio-card">
+                        <div class="audio-icon">🔊</div>
+                        <h3>Explicación rápida</h3>
+                        <p id="audioStatus">Pulsa el botón para escuchar una síntesis de 30 segundos usando el lector de voz del navegador.</p>
+                        <button class="btn btn-primary" id="speakSummary">▶ Reproducir audio</button>
+                        <button class="btn btn-ghost" id="stopSpeech">■ Detener</button>
+                        <div class="audio-note">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflexion" class="section dark">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">07 · PENSAMIENTO CRÍTICO</span>
+                    <h2>Telecomunicaciones y sociedad</h2>
+                    <p>
+                        El canal no es solamente una elección técnica. También puede relacionarse con costos,
+                        impacto ambiental, acceso, regulación y decisiones históricas.
+                    </p>
+                </div>
+
+                <div class="question-grid">
+                    <article class="question-card">
+                        <span>ÉTICO</span>
+                        <h3>¿Qué responsabilidades existen al diseñar una red que transportará información personal?</h3>
+                        <p>Considerar privacidad, seguridad y uso responsable de la infraestructura.</p>
+                    </article>
+                    <article class="question-card">
+                        <span>ECOLÓGICO</span>
+                        <h3>¿Qué impacto tienen la fabricación, energía y sustitución de equipos de telecomunicaciones?</h3>
+                        <p>Analizar consumo energético, vida útil, mantenimiento y residuos electrónicos.</p>
+                    </article>
+                    <article class="question-card">
+                        <span>HISTÓRICO</span>
+                        <h3>¿Cómo cambió la distancia de comunicación con la llegada de la telefonía, la fibra y los satélites?</h3>
+                        <p>Comparar cómo distintas tecnologías ampliaron la capacidad y cobertura.</p>
+                    </article>
+                    <article class="question-card">
+                        <span>POLÍTICO</span>
+                        <h3>¿Cómo influye la regulación del espectro radioeléctrico en los servicios inalámbricos?</h3>
+                        <p>El espectro es un recurso compartido y su uso está sujeto a reglas técnicas y administrativas.</p>
+                    </article>
+                    <article class="question-card">
+                        <span>ECONÓMICO</span>
+                        <h3>¿Cómo cambia el costo total de una red cuando se elige cobre, fibra o una solución inalámbrica?</h3>
+                        <p>Comparar instalación, equipos, mantenimiento, energía y condiciones del lugar.</p>
+                    </article>
+                </div>
+
+                <div class="reflection-box">
+                    <b>Idea para debatir:</b>
+                    una decisión de telecomunicaciones puede ser técnicamente viable y, aun así, requerir evaluar
+                    costos, accesibilidad, seguridad, impacto ambiental y regulación.
+                </div>
+            </div>
+        </section>
+
+        <section id="fuentes" class="section light">
+            <div class="wrap">
+                <div class="section-heading">
+                    <span class="eyebrow">08 · FUENTES Y EQUIPO</span>
+                    <h2>Referencias y datos de entrega</h2>
+                </div>
+
+                <div class="sources-grid">
+                    <article class="info-card">
+                        <div class="card-top"><span class="icon-box">APA</span><span class="tag">APA 7</span></div>
+                        <h3>Bibliografía referenciada</h3>
+                        <ol class="references">
+                            <li>
+                                Cisco Systems. (2006). <i>Physical Media Types</i>. Cisco Systems.
+                                <a href="https://www.cisco.com/c/dam/global/fi_fi/assets/docs/SMB_University_120307_Networking_Fundamentals.pdf" target="_blank" rel="noopener">Consultar fuente</a>
+                            </li>
+                            <li>
+                                IBM. (s. f.). <i>Introduction to fiber optic links</i>. IBM Documentation.
+                                <a href="https://www.ibm.com/docs/en/systems-hardware/zsystems/3931-A01?topic=pfol-introduction-fiber-optic-links" target="_blank" rel="noopener">Consultar fuente</a>
+                            </li>
+                            <li>
+                                International Telecommunication Union. (2024). <i>Recommendation ITU-T G.652: Characteristics of a single-mode optical fibre and cable</i>.
+                                <a href="https://www.itu.int/ITU-T/recommendations/rec.aspx?lang=es&rec=16060" target="_blank" rel="noopener">Consultar fuente</a>
+                            </li>
+                            <li>
+                                Federal Communications Commission. (s. f.). <i>Códigos de las tecnologías usadas en redes fijas</i>.
+                                <a href="https://help.bdc.fcc.gov/hc/es/articles/5290793888795-C%C3%B3digos-de-las-Tecnolog%C3%ADas-Usadas-en-Redes-Fijas" target="_blank" rel="noopener">Consultar fuente</a>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <article class="info-card team-card">
+                        <div class="card-top"><span class="icon-box">👥</span><span class="tag">ENTREGA</span></div>
+                        <h3>Identificación del equipo</h3>
+                        <div class="team-row"><span>👤</span><div><small>24200260</small><strong>Diaz Jimenez Julio Emanuel</strong></div></div>
+                        <div class="team-row"><span>👤</span><div><small>24200830</small><strong>Perez Gomez Jocelyn Patricia</strong></div></div>
+                        <div class="team-row"><span>👤</span><div><small>24200833</small><strong>Perez Romero Sara Jocefina</strong></div></div>
+                        <div class="team-row"><span>👤</span><div><small>24200819</small><strong>Mata Licona Gael</strong></div></div>
+                        <div class="team-row"><span>📘</span><div><small>Materia</small><strong>Fundamentos de telecomunicaciones</strong></div></div>
+                        <div class="team-row"><span>📝</span><div><small>Asignatura / tema</small><strong>Tipos de canales de comunicación</strong></div></div>
+                        
+                            
+                        </div>
+                    </article>
+                </div>
+
+                <div class="sitemap">
+                    <div>
+                        <span class="eyebrow">MAPA DEL SITIO</span>
+                        <h3>Recorrido recomendado</h3>
+                    </div>
+                    <div class="sitemap-links">
+                        <a href="#inicio">Inicio</a>
+                        <span>→</span>
+                        <a href="#conceptos">Conceptos</a>
+                        <span>→</span>
+                        <a href="#simulador">Simulador</a>
+                        <span>→</span>
+                        <a href="#guiados">Guiados</a>
+                        <span>→</span>
+                        <a href="#no-guiados">No guiados</a>
+                        <span>→</span>
+                        <a href="#comparativa">Comparativa</a>
+                        <span>→</span>
+                        <a href="#multimedia">Multimedia</a>
+                        <span>→</span>
+                        <a href="#reflexion">Reflexión</a>
+                        <span>→</span>
+                        <a href="#fuentes">Fuentes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="section-nav" aria-label="Moverse entre secciones">
+        <button id="prevSection" aria-label="Sección anterior">←</button>
+        <span id="sectionCounter">1 / 8</span>
+        <button id="nextSection" aria-label="Siguiente sección">→</button>
+    </div>
+
+    <footer class="footer">
+        <div class="wrap footer-wrap">
+            <span>Canales de comunicación · Telecomunicaciones</span>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
